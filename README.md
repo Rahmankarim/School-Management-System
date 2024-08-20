@@ -1,3 +1,7 @@
+#About this project
+
+The School Management System is a robust web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to facilitate seamless management of educational operations. It features user authentication and role-based access, allowing Admins and Moderators to manage system-wide functions and settings, while Students can access their personal information. The application includes a dynamic dashboard tailored to different roles—Admin, Teacher, and Student—enabling efficient management of user data, class details, and academic performance. With its modern interface and scalable architecture, the system aims to streamline administrative tasks and enhance the overall efficiency of school management.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
