@@ -1,0 +1,159 @@
+/* Box-sizing and Margin Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.loginNavbar {
+  background-image: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #625eb1 100%
+  );
+}
+
+.loginNavbarBrand {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.loginNavbarBrand:hover {
+  color: rgb(204, 200, 200);
+}
+
+/* Footer Styles */
+.footer {
+  background-image: linear-gradient(
+    -225deg,
+    #1d8fe1 48%,
+    #625eb1 100%,
+    #22e1ff 0%
+  );
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: calc(
+      100vh - 73px
+    ); /* Use full viewport height minus header/footer height */
+  }
+}
+
+/* Form Styles */
+.form-control {
+  line-height: 2.5;
+}
+
+.loginform-control:hover {
+  filter: drop-shadow(2px 4px 6px #0c6efd); /* Add space after 6px */
+}
+
+.form-select {
+  line-height: 2.5;
+}
+
+/* Divider Styles */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+/* Container Styles */
+.container {
+  max-width: 100%;
+  padding: 0 15px; /* Add padding for smaller screens */
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 1000px; /* Ensure consistent max-width for larger screens */
+  }
+}
+
+/* Visibility Styles */
+.newAccount {
+  display: none;
+}
+
+.alreadyHaveAccountText {
+  display: none;
+}
+
+.h-custom {
+  min-height: calc(
+    100vh - 73px
+  ); /* Ensure the section takes at least the full viewport height minus any header/footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure the image and form are responsive */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add padding for smaller screens to prevent content from going underneath */
+@media (max-width: 768px) {
+  .h-custom {
+    padding: 1rem; /* Add padding to ensure content doesn't touch the edges */
+  }
+
+  /* Ensure form elements stack properly on smaller screens */
+  .form-control,
+  .form-select {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+}
+.col-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.dashboardBackgroundColor {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}

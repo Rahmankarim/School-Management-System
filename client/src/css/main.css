@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+}
+.card-title,
+.card-text {
+  font-size: 1rem;
+}
+.userImage {
+  border-radius: 100%;
+}
+.nameText {
+  display: flex;
+  justify-content: flex-end;
+}
+/* General Layout Adjustments */
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Navbar */
+.dashboardBackgroundColor {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .dashboardBackgroundColor {
+    padding: 10px;
+  }
+}
+
+/* Charts and Cards */
+.col-lg-6 {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .col-lg-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer */
+hr {
+  border-top: 1px solid #ccc;
+}
+
+p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
+  }
+}

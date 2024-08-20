@@ -1,0 +1,54 @@
+/* Default sidebar styles */
+.SideMenu {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 95vh; /* Full height of viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 250px; /* Adjust as needed */
+  background-color: #1f283e;
+  transition: width 0.3s;
+}
+
+/* Horizontal menu styles for smaller screens */
+.horizontal-menu {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center;
+  width: 100%;
+  height: auto; /* Adjust height to fit content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1f283e;
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.horizontal-menu .CDBSidebarContent,
+.horizontal-menu .CDBSidebarMenu {
+  display: flex;
+  flex-direction: row; /* Align content horizontally */
+  width: 100%;
+}
+
+.horizontal-menu .CDBSidebarMenuItem {
+  flex: 1; /* Allow items to grow and shrink */
+  text-align: center; /* Center text in each item */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .SideMenu {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1f283e;
+  }
+}
